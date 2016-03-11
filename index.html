@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="libs/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/MobileEvent.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/snap.svg-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+		<title>基于SVG的ASP.NET课程随堂互动环节的设计与实现</title>
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="stage">
+				<div id="step1">
+
+					<div class="title" id="t1">1.你是谁(What)</div>
+					<div id="t1_txt">
+					</div>
+
+					<div class="title" id="t2">2.为啥用(Why)</div>
+					<div id="t2_txt">
+					</div>
+
+					<div class="title" id="s_use">3.怎么用(How)</div>
+
+					<div id="s_use_txt">
+						<div class="subtitle" id="s1">1.RequiredFiledVaildator(必填验证)</div>
+						<div id="s1_txt">
+						</div>
+
+						<div class="subtitle" id="s2">2.CompareValidator (比较验证)</div>
+						<div id="s2_txt">
+						</div>
+
+						<div class="subtitle" id="s3">3.RangeVaildator(范围验证)</div>
+						<div id="s3_txt">
+						</div>
+
+						<div class="subtitle" id="s4">4.RegularExpressionValidator(正则表达式验证)</div>
+						<div id="s4_txt">
+						</div>
+					</div>
+
+				</div>
+				<div id="step2">
+				</div>
+				<div id="step3">
+					<p id="complain">
+						看完前面两个章节，童鞋们的内心是不是崩溃的呢？这是个什么鬼~~
+						<br /> 哈哈，淡定点！小编精心准备了一个注册页面，以便帮助童鞋更加理解“验证的意义”
+					</p>
+					<br />
+					<div id="register">
+
+						<form class="register_form">
+							<h1>会员注册</h1>
+							<p>
+								<span>姓　　名：</span>
+								<input type="text" class="INPUT" name="username" id="username" value="" />
+								<span id="username_span"></span>
+							</p>
+							<p>
+								<span>密　　码：</span>
+								<input type="password" class="INPUT" name="pwd" id="pwd" value="" />
+								<span id="pwd_span"></span>
+							</p>
+							<p>
+								<span>确认密码：</span>
+								<input type="password" class="INPUT" name="pwd_chk" id="pwd_chk" value="" />
+								<span id="pwd_chk_span"></span>
+							</p>
+							<p>
+								<span>性　　别：</span>
+								<input type="radio" class="input_ra_chk" name="sex" id="boy" value="男" checked="checked" />
+								<label for="boy">男</label>
+								<input type="radio" class="input_ra_chk" name="sex" id="girl" value="女" />
+								<label for="girl">女</label>
+							</p>
+							<p>
+								<span>出生日期：</span>
+								<input type="date" class="INPUT" name="birthday" id="birthday" value="" />
+								<span id="birthday_span"></span>
+							</p>
+							<p>
+								<span>爱　　好：</span>
+								<input type="checkbox" class="input_ra_chk" name="hobby" id="swim" value="游泳" />
+								<label for="swim">游泳</label>
+								<input type="checkbox" class="input_ra_chk" name="hobby" id="read" value="看书" />
+								<label for="read">看书</label>
+								<input type="checkbox" class="input_ra_chk" name="hobby" id="net" value="上网" />
+								<label for="net">上网</label>
+							</p>
+							<p>
+								<input type="button" class="SuBmit_Btn" id="commit" value="提交" />
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="loading">
+				<img src="img/loading.gif" />
+			</div>
+		</div>
+		<audio id="trueAudio" src="sounds/good.mp3"></audio>
+		<audio id="wrongAudio" src="sounds/wrong.mp3"></audio>
+		<audio id="allokAudio" src="sounds/allok.mp3"></audio>
+	</body>
+
+</html>
